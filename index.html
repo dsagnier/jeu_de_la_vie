@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+        <title>Le jeu de la vie</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-light bg-light">
+            <div class="navbar-brand" href="#">Le jeu de la vie</div>
+            <div>
+                <div id="pnl-tour">
+                    Tour : 0
+                </div>
+                <div id="pnl-start">
+                    <button id="btn-start" type="button" name="start">Start</button>
+                </div>
+                <div id="pnl-stop">
+                    <button id="btn-stop" type="button" name="stop">Stop</button>
+                </div>
+            </div>
+            <div>
+                <div class="slidecontainer">
+                    <label for="slider-speed">Vitesse : </label><input id="slider-speed" class="slider" type="range" name="speed" min="100" max="2000" /><span id="output-speed"></span>
+                </div>
+                <label for="taille">Taille : </label><input id="taille" type="number" name="taille" value="20" />
+                <button id="generer-tableau" type="button" name="generate">Générer Tableau</button>
+            </div>
+        </nav>
+        <div id="pnl-tableau"></div>
+        <script src="jeuDeLaVie.js"></script>
+    </body>
+</html>
